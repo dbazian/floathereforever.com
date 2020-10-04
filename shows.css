@@ -1,0 +1,166 @@
+/* fonts */
+
+@font-face {
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('DM Serif Text Regular'), local('DMSerifText-Regular'), url(https://fonts.gstatic.com/s/dmseriftext/v4/rnCu-xZa_krGokauCeNq1wWyWfSFXQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+ @font-face {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/firacode/v7/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Libre Caslon Text';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Libre Caslon Text Regular'), local('LibreCaslonText-Regular'), url(https://fonts.gstatic.com/s/librecaslontext/v1/DdT878IGsGw1aF1JU10PUbTvNNaDMfq41-I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Whole Page */
+
+html {
+    font-size: 16px;
+    background-color: black;
+}
+
+/* Top Header */
+
+header {
+    background-color: black;
+    overflow: hidden; 
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1vw;
+}
+
+#mainNavigation {
+    padding: 2vw 1vw;
+    background-color: black;
+    margin: .5vw .5vw;
+}
+
+.title {
+    font-size: 3.5vw;
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: "Libre Caslon Text", times, serif;
+}
+
+header a {
+    font-size: 3vw;
+    text-decoration: none;
+    padding: 1vw;
+    font-family: "DM Serif Text", times, serif;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(194, 16, 185)
+}
+
+.header-left {
+    float: left;
+    padding: .75em;
+}
+
+.header-right {
+    float: right;
+    padding: .75em;
+}
+
+/* links */
+
+#forLinks {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#smallLink {
+    width: 4vw;
+}
+
+/* Dates */ 
+
+.showDates {
+    padding-top: 1vw;
+    padding-bottom: .5vw;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "DM Serif Text", "Times", "serif";
+}
+
+/* Owl Banner */ 
+
+#banner {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 1em;
+    color: white;
+    text-align: center;
+    font-family: 'DM Serif Text';
+    font-size: 3vw;
+}
+
+.title2 {
+    font-size: 3.5vw;
+    color: white;
+    text-align: center;
+    display: none;
+    font-family: "Libre Caslon Text", times, serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* For Mobile */
+
+@media only screen and (max-width: 768px) {
+    #smallLink {width: 9vw;}
+    .title {display: none;}
+     header a {font-size: 6vw;}
+    .title2 {display: block; font-size: 7.5vw; color:}
+    p {font-size: 4vw;}
+
+    }
+
